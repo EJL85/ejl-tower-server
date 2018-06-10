@@ -6,11 +6,11 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
-    "http-errors": "~1.6.2",
-    "pg": "^7.4.3",
-    "knex": "^0.14.6"
+    "knex": "^0.14.6",
+    "pg": "^7.4.3"
   }
 }
