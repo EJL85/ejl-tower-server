@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require("body-parser");
+const cors = require('cors');
 
 const app = express();
 
@@ -7,6 +8,7 @@ const games = require("./routes/games");
 const players = require("./routes/players");
 
 app.use(bodyParser.json());
+app.use(cors());
 
 app.use("/games", games);
 app.use("/players", players);
